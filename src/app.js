@@ -69,7 +69,8 @@ app.get(`/weather`, (req, res) => {
                 observationtime: weatherdata.observationtime,
                 location: `${weatherdata.location_name}, ${weatherdata.region}, ${weatherdata.country}`,
                 temperature: weatherdata.temperature,
-                humidity: weatherdata.humidity
+                humidity: weatherdata.humidity,
+                description: weatherdata.weatherdescription
             })
         })
     } )

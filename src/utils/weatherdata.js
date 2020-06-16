@@ -14,7 +14,8 @@ weatherdata = ({latitude, longitude}, callback) => {
                 region: response.body.location.region,
                 country: response.body.location.country,
                 temperature: response.body.current.temperature,
-                humidity: response.body.current.humidity
+                humidity: response.body.current.humidity,
+                weatherdescription: response.body.current.weather_descriptions
             })
 
         }

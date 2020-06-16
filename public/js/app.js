@@ -18,7 +18,7 @@ weatherFormEl.addEventListener('submit', (event) => {
                 var weatherdataheading = `<strong>Observation Time: </strong>${data.observationtime}
                 <strong>Location: </strong>${data.location}`
                 var weatherdata = `<h2>Temperature: </h2>${data.temperature} degrees centigrade 
-                <h2>Humidity: </h2>${data.humidity}`
+                <h2>Humidity: </h2>${data.humidity} <p>Weather description: ${data.description}</p>`
                 
                 message1El.innerHTML = weatherdataheading
                 message2El.innerHTML = weatherdata
